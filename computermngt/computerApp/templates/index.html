@@ -23,16 +23,17 @@
         </h1>
 
         {% block menu %}
-        <h2>
-            Menu
-        </h2>
-        <ul id="menu">
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'machines' %}">Machines</a></li>
-            <li><a href="{% url 'personnels' %}">Personnes</a></li> 
-            <li><a href="{% url 'add-machine' %}">Ajouter une machine</a></li>
-            <li><a href="{% url 'add-personnel' %}">Ajouter une personne</a></li>
-        </ul>
+        <header>
+            <div class="navbar">
+                <a href="{% url 'index' %}">Accueil</a>
+                <a href="{% url 'machines' %}">Équipements</a>
+                <a href="{% url 'personnels' %}">Personnel</a>
+
+                <a href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="connexion">Connexion</a>   <!-- Mettre page de connexion -->
+
+            </div>
+        </header>
+        
         {% endblock %}
 
         {% block content %}
