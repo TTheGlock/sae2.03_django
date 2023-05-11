@@ -34,12 +34,16 @@
         {% endblock %}
 
         {% block content %}
-            Blabla de la premiere page
+        <section>
+            <article>
+                <p class="title">Bienvenue sur le site web R&T Development.</p>
+             </article>
+        </section>
         {% endblock %}
 
-        <!-- On ajoute image ici depuis les statics -->
-        {% load static %}
-        <img src="{% static 'computerApp/images/logo_200px.png' %}" alt="logo" style="width:200px;height:200px;">
+        <footer>
+            <p>Website made by Maxence Lechevallier-Coussot | All Rights Reserved | Version 0.0.1 2022-2023</p>
+        </footer>
 
     </body>
     
