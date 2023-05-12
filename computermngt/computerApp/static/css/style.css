@@ -57,8 +57,10 @@ section article a:visited {
     color: #3892d4;
 }
 
-.lite_title {
-    font-size: large;
+.liste {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {
@@ -68,3 +70,4 @@ footer {
     margin-top: 240px; 
     width: 100%;
 }
+
