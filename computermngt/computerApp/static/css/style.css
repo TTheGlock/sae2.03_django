@@ -63,6 +63,12 @@ section article a:visited {
     flex-direction: column;
 }
 
+.add{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 footer {
     color: rgb(153, 153, 153);
     font-size: medium;
