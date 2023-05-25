@@ -8,11 +8,8 @@ Sae 2.03, création d'un site web à partir de Django
 
 ## Démarrage
 
-dans `/virtualenv` :
 - `source virtualenv/djangoenv/bin/activate`
-
-puis dans `/computermngt` :
-- `python3 manage.py runserver`
+- `python3 computermngt/manage.py runserver`
 
 ## Informations additionnelles 
 
