@@ -4,7 +4,7 @@
     <section>
         <article>
             <p class="title">Liste des Équipements</p>
-            <a href="{% url 'add-machine' %}">Ajouter une Machine</a>
+            <a class="add" href="{% url 'add-machine' %}">Ajouter une Machine</a>
         </article>
     </section>
     {% if machines %}
@@ -17,6 +17,6 @@
         {% endfor %}
         </u>
     {% else %}
-        <p>Il n\ ’y a pas de machines.</p>
+        <p>Il n’y a pas de machines.</p>
     {% endif %}
 {% endblock %}
