@@ -1,6 +1,11 @@
 {% extends "index.html" %}
 
 {% block content %}
+<section>
+    <article>
+        <p class="title">Ajout d'une Personne :</p>
+    </article>
+</section>
 <form method="post" class="add">
 {% csrf_token %}
 ID de la personne : {{ form.id }}<p>

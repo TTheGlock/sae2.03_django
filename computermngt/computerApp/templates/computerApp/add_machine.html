@@ -1,6 +1,12 @@
 {% extends "index.html" %}
 
 {% block content %}
+<section>
+    <article>
+        <p class="title">Ajout d'un Équipement :</p>
+    </article>
+</section>
+
 <form method="post" class="add">
 {% csrf_token %}
 Nom de la machine : {{ form.nom }}<p>

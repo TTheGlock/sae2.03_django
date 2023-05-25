@@ -63,12 +63,17 @@ section article a:visited {
     flex-direction: column;
 }
 
+.add_title {
+    font-size:large;
+    color: #3892d4;
+}
+
 .add{
-    margin-top: 70px; 
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 100px; 
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
-    justify-content: left;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
