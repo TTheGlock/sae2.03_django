@@ -24,9 +24,9 @@ Connexion admin :
 ### 1. Identifiants incorrects
 
 dans `/computermngt` :
-- `python manage.py shell`
-- `from django.contrib.auth import get_user_model
-list(get_user_model().objects.filter(is_superuser=True).values_list('username', flat=True))`
+- `python3 manage.py shell`
+- `from django.contrib.auth import get_user_model`
+- `list(get_user_model().objects.filter(is_superuser=True).values_list('username', flat=True))`
 
 si cette commande ne renvoie rien, alors les identiants sont incorrects car ils n'existent pas.
 
