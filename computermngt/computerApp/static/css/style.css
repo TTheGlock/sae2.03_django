@@ -65,8 +65,10 @@ section article a:visited {
 
 .add{
     margin-top: 70px; 
+    margin-left: 70px;
+    margin-right: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 }
 
