@@ -15,7 +15,7 @@ Sae 2.03, création d'un site web à partir de Django
 
 ## Informations additionnelles 
 
-### Pour des raisons de sécurité, les bases de données ne sont pas envoyées sur le dépôt Github. 
+### ⚠️ Pour des raisons de sécurité, les bases de données ne sont pas envoyées sur le dépôt Github ⚠️
 Il faudra donc recréer les identifiants administrateur à chaque récupération :
 
 1. Vérification :
