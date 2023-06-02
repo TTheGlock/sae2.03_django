@@ -18,12 +18,12 @@ Sae 2.03, création d'un site web à partir de Django
 ### Pour des raisons de sécurité, les bases de données ne sont pas envoyées sur le dépôt Github. 
 Il faudra donc recréer les identifiants administrateur à chaque récupération :
 
-Vérification :
-dans `/computermngt` :
+1. Vérification :
+- se placer dans `/computermngt`
 - `python3 manage.py shell`
 - `from django.contrib.auth import get_user_model`
 - `list(get_user_model().objects.filter(is_superuser=True).values_list('username', flat=True))`
 
-Création : 
+2. Création : 
 - `python manage.py createsuperuser`
 - suivre les directives et rentrer l'identifiant `admin` et le mot de passe `gtrnet`
