@@ -73,9 +73,15 @@
     </section>
     {% endblock %}
     
-    <footer>
-      <p>Website made by Maxence Lechevallier-Coussot | All Rights Reserved | Version 0.1.0 2022-2023</p>
+    {% block footer %}
+    <footer class="text-center text-black fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #f8f9fa;">
+            R&T Development Version 0.1.1 © 2022-2023 Copyright - Maxence Lechevallier-Coussot
+          </div>
+        <!-- Copyright -->
     </footer>
+    {% endblock %}
 
   </body>
 
