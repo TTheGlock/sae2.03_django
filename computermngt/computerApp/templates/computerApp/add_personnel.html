@@ -8,7 +8,7 @@
 </section>
 <form method="post" class="add">
 {% csrf_token %}
-ID de la personne : {{ form.id }}<p>
+ID de la personne (13 requis): {{ form.id }}<p>
 Nom de la personne : {{ form.nom }}<p>
 Prénom de la personne : {{ form.prenom }}
 <input type="submit", value="Submit">

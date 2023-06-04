@@ -7,15 +7,15 @@
         </article>
     </section>
     {% if machines %}
-    <ul class="liste">
+    <ul class="list-group">
         {% for machine in machines %}
-            <li>
-                <a href="{% url 'machine-detail' machine.id %}">{{ machine.id }}</a>
-                ({{machine.nom}})
+            <li class="list-group-item list-group-flush">
+                <a href="{% url 'machine-detail' machine.id %}" type="button" class="list-group-item list-group-item-action">{{ machine.id }} - {{machine.nom}}</a>
             </li>
         {% endfor %}
         </u>
     {% else %}
         <p>Il n’y a pas de machines.</p>
     {% endif %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 {% endblock %}
