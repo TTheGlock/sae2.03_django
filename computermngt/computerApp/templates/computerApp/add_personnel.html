@@ -6,11 +6,55 @@
         <p class="title">Ajout d'une Personne :</p>
     </article>
 </section>
+
 <form method="post" class="add">
 {% csrf_token %}
-ID de la personne (13 requis): {{ form.id }}<p>
-Nom de la personne : {{ form.nom }}<p>
-Prénom de la personne : {{ form.prenom }}
-<input type="submit", value="Submit">
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputID1" class="col-form-label">ID de la personne :</label>
+    </div>
+    <div class="col-auto">
+      {{ form.id }}
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Doit contenir un nombre d'une longueur de 13 chiffres.
+      </span>
+    </div>
+</div>
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputNOM1" class="col-form-label">Nom de la personne :</label>
+    </div>
+    <div class="col-auto">
+      {{ form.nom }}
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Doit contenir un nom en majuscules.
+      </span>
+    </div>
+</div>
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputPRENOM1" class="col-form-label">Prénom de la personne :</label>
+    </div>
+    <div class="col-auto">
+      {{ form.prenom }}
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Doit contenir un prénom commencant par une majuscule.
+      </span>
+    </div>
+</div>
+
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3", value="Submit">Enregistrer</button>
+</div>
+
 </form>
 {% endblock %}

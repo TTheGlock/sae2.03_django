@@ -9,8 +9,38 @@
 
 <form method="post" class="add">
 {% csrf_token %}
-Nom de la machine : {{ form.nom }}<p>
-Type de la machine (PC, Mac, Serveur ou Switch) : {{ form.mach }}
-<input type="submit", value="Submit">
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputNOM2" class="col-form-label">Nom de la machine :</label>
+    </div>
+    <div class="col-auto">
+      {{ form.nom }}
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Doit contenir le nom / référence de la machine.
+      </span>
+    </div>
+</div>
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputTYPE1" class="col-form-label">Type de la machine :</label>
+    </div>
+    <div class="col-auto">
+      {{ form.mach }}
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Doit contenir le type de la machine : PC, MAC, Serveur ou Switch.
+      </span>
+    </div>
+</div>
+
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3", value="Submit">Enregistrer</button>
+</div>
+
 </form>
 {% endblock %}
