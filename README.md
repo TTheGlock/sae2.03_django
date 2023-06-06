@@ -1,10 +1,14 @@
 # sae2.03_django
 Sae 2.03, création d'un site web à partir de Django
 
+---
+
 ## Installation
 
 - `git clone git@github.com:TTheGlock/sae2.03_django.git` (me demander le mot de passe)
 - ou téléchargement du fichier en .zip
+
+---
 
 ## Démarrage
 
@@ -12,6 +16,8 @@ Sae 2.03, création d'un site web à partir de Django
 - `python3 computermngt/manage.py makemigrations`
 - `python3 computermngt/manage.py migrate`
 - `python3 computermngt/manage.py runserver`
+
+--- MAJ DU 06/06/2023 : POUR PLUS DE SIMPLICITE, J'AI DECIDE D'AJOUTER LES BASES DE DONNEES
 
 ## Informations additionnelles 
 
