@@ -16,13 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     {% load static %}
     <link rel="icon" href=" {% static 'computerApp/images/sob.png' %} ">
-    <style>
-      .page-content {
-        min-height: calc(100vh - 56px - 56px);
-        margin-bottom: 56px;
-        padding-bottom: 56px;
-      }
-    </style>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
 
   </head>
   
@@ -77,20 +71,21 @@
   <body>
     
     {% block content %}
-    <section>
-        <article>
-            <p class="title">Bienvenue sur le site web R&T Development.</p>
-         </article>
-    </section>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="text-center" style="margin-top: 200px">
+          <p class="fw-bold">Bienvenue sur le site web R&T Development</p>
+        </div>
+      </div>
     {% endblock %}
     
+    {% block footer %}
     <footer class="text-center text-black fixed-bottom">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #f8f9fa;">
-            R&T Development Version 0.1.5 © 2022-2023 Copyright - Maxence Lechevallier-Coussot
+            R&T Development Version 0.1.6 © 2022-2023 Copyright - Maxence Lechevallier-Coussot
         </div>
-        <!-- Copyright -->
     </footer>
+    {% endblock %}
 
   </body>
 

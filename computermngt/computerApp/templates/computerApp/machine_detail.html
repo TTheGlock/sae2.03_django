@@ -1,8 +1,12 @@
 {% extends "index.html" %}
 
 {% block content %}
-    <p><strong>Nom : </strong>{{machine.nom}}</h1>
-    <p><strong>ID : </strong>{{machine.id}}</p>
-    <p><strong>Date de maintenance : </strong>{{machine.maintenanceDate}}</p>
-    <p><strong>Machine : </strong>{{machine.mach}}</p>
+    <ul class="list-group">
+        <li class="list-group-item list-group-flush">
+            <p class="text-center"><strong>Nom : </strong>{{machine.nom}}</h1>
+            <p class="text-center"><strong>ID : </strong>{{machine.id}}</p>
+            <p class="text-center"><strong>Date de maintenance : </strong>{{machine.maintenanceDate}}</p>
+            <p class="text-center"><strong>Machine : </strong>{{machine.mach}}</p>
+        </li>
+    <ul>
 {% endblock %}

@@ -1,7 +1,11 @@
 {% extends "index.html" %}
 
 {% block content %}
-    <strong>Nom : </strong>{{personnel.nom}}<p>
-    <strong>Prénom : </strong>{{personnel.prenom}}<p>
-    <strong>ID : </strong>{{personnel.id}}
+    <ul class="list-group">
+        <li class="list-group-item list-group-flush">
+            <p class="text-center"><strong>Nom : </strong>{{personnel.nom}}<p>
+            <p class="text-center"><strong>Prénom : </strong>{{personnel.prenom}}<p>
+            <p class="text-center"><strong>ID : </strong>{{personnel.id}}
+        </li>
+    <ul>
 {% endblock %}

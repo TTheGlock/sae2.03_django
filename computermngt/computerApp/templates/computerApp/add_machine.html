@@ -1,46 +1,47 @@
 {% extends "index.html" %}
 
 {% block content %}
-<section>
-    <article>
-        <p class="title">Ajout d'un Équipement :</p>
-    </article>
-</section>
+<div class="container d-flex justify-content-center align-items-center">
+  <form method="post" class="add" style="margin-top: 200px">
+    {% csrf_token %}
+    <div>
+      <p class="fw-bold">Ajout d'un équipement :</p>
+    </div>
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputNOM2" class="col-form-label">Nom de la machine :</label>
+      </div>
+      <div class="col-auto">
+        {{ form.nom }}
+      </div>
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+          Doit contenir le nom / référence de la machine.
+        </span>
+      </div>
+    </div>
 
-<form method="post" class="add">
-{% csrf_token %}
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputTYPE1" class="col-form-label">Type de la machine :</label>
+      </div>
+      <div class="col-auto">
+        {{ form.mach }}
+      </div>
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+          Doit contenir le type de la machine : PC, MAC, Serveur ou Switch.
+        </span>
+      </div>
+    </div>
 
-<div class="row g-3 align-items-center">
-    <div class="col-auto">
-      <label for="inputNOM2" class="col-form-label">Nom de la machine :</label>
+    <div class="row">
+      <div class="col text-center">
+        <button type="submit" class="btn btn-primary mb-3" value="Submit">Enregistrer</button>
+        <button type="button" class="btn btn-danger mb-3" onclick="window.history.back()">Annuler</button>
+      </div>
     </div>
-    <div class="col-auto">
-      {{ form.nom }}
-    </div>
-    <div class="col-auto">
-      <span id="passwordHelpInline" class="form-text">
-        Doit contenir le nom / référence de la machine.
-      </span>
-    </div>
+  </form>
 </div>
 
-<div class="row g-3 align-items-center">
-    <div class="col-auto">
-      <label for="inputTYPE1" class="col-form-label">Type de la machine :</label>
-    </div>
-    <div class="col-auto">
-      {{ form.mach }}
-    </div>
-    <div class="col-auto">
-      <span id="passwordHelpInline" class="form-text">
-        Doit contenir le type de la machine : PC, MAC, Serveur ou Switch.
-      </span>
-    </div>
-</div>
-
-<div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3", value="Submit">Enregistrer</button>
-</div>
-
-</form>
 {% endblock %}
