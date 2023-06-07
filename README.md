@@ -5,8 +5,7 @@ Sae 2.03, création d'un site web à partir de Django
 
 ## Installation
 
-- `git clone git@github.com:TTheGlock/sae2.03_django.git` (me demander le mot de passe)
-- ou téléchargement du fichier en .zip
+- Télécharger la dernière release sur la droite
 
 ---
 
