@@ -3,3 +3,11 @@
     margin-bottom: 56px;
     padding-bottom: 10px;
 }
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 9999;
+    display: none;
+}
